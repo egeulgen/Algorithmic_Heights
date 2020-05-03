@@ -7,3 +7,4 @@
 1. [Degree Array](solutions/deg.py)
 1. [Majority Element](solutions/maj.py)
 1. [Merge Two Sorted Arrays](solutions/mer.py)
+1. [Double-Degree Array](solutions/ddeg.py)
