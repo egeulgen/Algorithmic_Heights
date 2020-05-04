@@ -10,3 +10,4 @@
 1. [Double-Degree Array](solutions/ddeg.py)
 1. [Merge Sort](solutions/ms.py)
 1. [2SUM](solutions/2sum.py)
+1. [2-Way Partition](solutions/par.py)
