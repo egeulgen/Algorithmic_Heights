@@ -40,9 +40,8 @@ def merge_sort(array):
 
 if __name__ == "__main__":
     '''
-    Given: A positive integer n≤105 and a sorted array A[1..n] of integers from −105 to 105, a positive integer m≤105 
-    and a sorted array B[1..m] of integers from −105 to 105.
-    Return: A sorted array C[1..n+m] containing all the elements of A and B.
+    Given: A positive integer n≤105 and an array A[1..n] of integers from −105 to 105.
+    Return: A sorted array A[1..n].
     '''
     input_lines = sys.stdin.read().splitlines()
     n = int(input_lines[0])
