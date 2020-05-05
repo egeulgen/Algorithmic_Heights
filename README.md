@@ -22,3 +22,4 @@
 1. [Square in a Graph](solutions/sq.py)
 1. [Testing Bipartiteness](solutions/bip.py)
 1. [Dijkstra's Algorithm](solutions/dij.py)
+1. [Median](solutions/med.py)
