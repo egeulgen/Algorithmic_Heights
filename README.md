@@ -23,3 +23,5 @@
 1. [Testing Bipartiteness](solutions/bip.py)
 1. [Dijkstra's Algorithm](solutions/dij.py)
 1. [Median](solutions/med.py)
+
+1. [Quick Sort](solutions/qs.py)
