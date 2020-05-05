@@ -14,3 +14,4 @@
 1. [Building a Heap](solutions/hea.py)
 1. [Connected Components](solutions/cc.py)
 1. [Breadth-First Search](solutions/bfs.py)
+1. [Counting Inversions](solutions/inv.py)
