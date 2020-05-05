@@ -30,6 +30,8 @@ class undirected_graph:
             self.nodes[edge[0]].target_nodes.append(self.nodes[edge[1]])
             self.nodes[edge[1]].target_nodes.append(self.nodes[edge[0]])
 
+        self.construct_adj_matrix()
+
     def construct_adj_matrix(self):
         adj_mat = [[0 for _ in range(len(self.nodes))] for _ in range(len(self.nodes))]
         for i in range(len(self.nodes)):
@@ -39,42 +41,36 @@ class undirected_graph:
                     adj_mat[j][i] = 1
         self.adj_mat = adj_mat
 
-    def DFS(self, visited, n, vert, start, count):
-        visited[vert] = True
-        if n == 0:
-            visited[vert] = False
-            if self.adj_mat[vert][start] == 1:
-                count = count + 1
-                return count
-            else:
-                return count
+    def BFS_2_coloring(self, label):
+        colors = {}
+        for v in self.nodes:
+            colors[v] = None
 
-        for i in range(len(self.adj_mat)):
-            if not visited[i] and self.adj_mat[vert][i] == 1:
-                count = self.DFS(visited, n - 1, i, start, count)
-        visited[vert] = False
-        return count
+        colors[label] = "red"
+        node = self.nodes[label]
+        Q = [node]
+        while Q:
+            u = Q.pop(0)
+            for conn in u.target_nodes:
+                if colors[conn.label] == colors[u.label]:
+                    return False
+                if colors[conn.label] is None:
+                    Q.append(conn)
+                    colors[conn.label] = "blue" if colors[u.label] == "red" else "red"
+        return True
 
-    def has_n_cycle(self, n=4):
-        self.construct_adj_matrix()
-        visited = [False] * len(self.adj_mat)
+    def is_bipartite(self):
+        for label in self.nodes:
+            if not self.BFS_2_coloring(label):
+                return "-1"
+        return "1"
 
-        count = 0
-        for i in range(len(self.adj_mat) - (n - 1)):
-            count = self.DFS(visited, n - 1, i, i, count)
-            visited[i] = True
-
-        count = count // 2
-        if count > 0:
-            return "1"
-        return "-1"
 
 
 if __name__ == "__main__":
     '''
-    Given: A positive integer k≤20 and k simple undirected graphs with n≤400 vertices in the edge list format.    
-    Return: For each graph, output "1" if it contains a simple cycle (that is, a cycle which doesn’t intersect itself) 
-    of length 4 and "-1" otherwise.
+    Given: A positive integer k≤20 and k simple graphs in the edge list format with at most 103 vertices each.
+    Return: For each graph, output "1" if it is bipartite and "-1" otherwise.
     '''
     input_lines = sys.stdin.read().splitlines()
     k = int(input_lines[0])
@@ -92,5 +88,5 @@ if __name__ == "__main__":
     for num_vertices, edge_list in zip(n_vert_list, edge_lists):
         G = undirected_graph()
         G.construct_graph(num_vertices, edge_list)
-        result.append(G.has_n_cycle())
+        result.append(G.is_bipartite())
     print(" ".join(result))
