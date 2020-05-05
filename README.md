@@ -17,3 +17,4 @@
 1. [Counting Inversions](solutions/inv.py)
 1. [3SUM](solutions/3sum.py)
 1. [3-Way Partition](solutions/par3.py)
+1. [Heap Sort](solutions/hs.py)
