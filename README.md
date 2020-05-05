@@ -15,3 +15,4 @@
 1. [Connected Components](solutions/cc.py)
 1. [Breadth-First Search](solutions/bfs.py)
 1. [Counting Inversions](solutions/inv.py)
+1. [3SUM](solutions/3sum.py)
