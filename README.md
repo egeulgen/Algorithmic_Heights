@@ -12,3 +12,4 @@
 1. [2SUM](solutions/2sum.py)
 1. [2-Way Partition](solutions/par.py)
 1. [Building a Heap](solutions/hea.py)
+1. [Connected Components](solutions/cc.py)
