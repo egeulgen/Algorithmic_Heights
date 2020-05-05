@@ -9,7 +9,6 @@ class directed_graph:
         def __init__(self, label):
             self.label = label
             self.target_nodes = []
-            self.visited = False
 
     def add_node(self, label):
         node = self.node(label)

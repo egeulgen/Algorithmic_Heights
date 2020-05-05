@@ -19,3 +19,4 @@
 1. [3-Way Partition](solutions/par3.py)
 1. [Heap Sort](solutions/hs.py)
 1. [Testing Acyclicity](solutions/dag.py)
+1. [Square in a Graph](solutions/sq.py)
