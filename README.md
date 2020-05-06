@@ -25,5 +25,6 @@
 1. [Median](solutions/med.py)
 1. [Partial Sort](solutions/ps.py)
 1. [Topological Sorting](solutions/ts.py)
+1. [Bellman-Ford Algorithm](solutions/bf.py)
 
 1. [Quick Sort](solutions/qs.py)
