@@ -28,3 +28,4 @@
 1. [Bellman-Ford Algorithm](solutions/bf.py)
 1. [Shortest Cycle Through a Given Edge](solutions/cte.py)
 1. [Quick Sort](solutions/qs.py)
+1. [Hamiltonian Path in DAG](solutions/hdag.py)
