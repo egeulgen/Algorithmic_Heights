@@ -33,3 +33,5 @@
 1. [Negative Weight Cycle](solutions/nwc.py)
 1. [General Sink](solutions/gs.py)
 1. [Semi-Connected Graph](solutions/sc.py)
+
+1. [Shortest Paths in DAG](solutions/sdag.py)
