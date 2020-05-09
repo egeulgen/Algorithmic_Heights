@@ -32,3 +32,4 @@
 1. [Strongly Connected Components](solutions/scc.py)
 1. [Negative Weight Cycle](solutions/nwc.py)
 1. [General Sink](solutions/gs.py)
+1. [Semi-Connected Graph](solutions/sc.py)
