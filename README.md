@@ -29,3 +29,4 @@
 1. [Shortest Cycle Through a Given Edge](solutions/cte.py)
 1. [Quick Sort](solutions/qs.py)
 1. [Hamiltonian Path in DAG](solutions/hdag.py)
+1. [Strongly Connected Components](solutions/scc.py)
