@@ -30,3 +30,4 @@
 1. [Quick Sort](solutions/qs.py)
 1. [Hamiltonian Path in DAG](solutions/hdag.py)
 1. [Strongly Connected Components](solutions/scc.py)
+1. [Negative Weight Cycle](solutions/nwc.py)
